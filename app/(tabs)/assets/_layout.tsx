@@ -1,0 +1,15 @@
+import { Stack } from 'expo-router';
+
+export default function AssetsLayout() {
+  return (
+    <Stack
+      screenOptions={{
+        headerShown: false,
+        animation: 'slide_from_right',
+        animationDuration: 220,
+        gestureEnabled: true,
+        fullScreenGestureEnabled: true,
+      }}
+    />
+  );
+}

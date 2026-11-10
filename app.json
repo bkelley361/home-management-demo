@@ -1,0 +1,88 @@
+{
+  "expo": {
+    "name": "home-management",
+    "slug": "home-management",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "home-management",
+    "userInterfaceStyle": "automatic",
+    "runtimeVersion": "1.0.0",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.benkelley.homemanagement",
+      "icon": {
+        "light": "./assets/images/ios/AppIcon.appiconset/AppIcon.png",
+        "dark": "./assets/images/ios/AppIcon.appiconset/AppIcon-Dark.png",
+        "tinted": "./assets/images/ios/AppIcon.appiconset/AppIcon-Tinted.png"
+      }
+    },
+    "android": {
+      "package": "com.benkelley.homemanagement",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#121316",
+        "backgroundImage": "./assets/images/adaptive-icon-background.png",
+        "monochromeImage": "./assets/images/adaptive-icon-monochrome.png"
+      },
+      "permissions": ["android.permission.READ_CALENDAR", "android.permission.WRITE_CALENDAR"]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#121316",
+          "dark": {
+            "image": "./assets/images/splash.png",
+            "backgroundColor": "#121316"
+          },
+          "imageWidth": 100
+        }
+      ],
+      "expo-status-bar",
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "Home Management adds your maintenance reminders to your calendar."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#00668c"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Home Management attaches photos and receipts to items you track.",
+          "cameraPermission": "Home Management lets you photograph an item label or receipt to keep with the asset."
+        }
+      ],
+      "expo-image",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "3d2b9472-d853-4502-a77d-c2153cf8ee72"
+      }
+    },
+    "owner": "bkelley361",
+    "updates": {
+      "url": "https://u.expo.dev/3d2b9472-d853-4502-a77d-c2153cf8ee72"
+    }
+  }
+}

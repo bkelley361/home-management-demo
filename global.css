@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm creamy alabaster background matching Figma (#FCF9F8) */
+    --background: 15 40% 98.04%;
+    /* Deep charcoal foreground text (#1B1C1C) */
+    --foreground: 180 1.82% 10.78%;
+    /* Pure white surface cards (#FFFFFF) */
+    --card: 0 0% 100%;
+    --card-foreground: 180 1.82% 10.78%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 180 1.82% 10.78%;
+    /* Primary buttons & high-contrast elements (#1B1C1C) */
+    --primary: 180 1.82% 10.78%;
+    --primary-foreground: 0 0% 100%;
+    /* Honeydew / Sage Accent (#D5E4D0) */
+    --secondary: 105 27.03% 85.49%;
+    --secondary-foreground: 120 25% 9.41%;
+    /* Soft pill background & sub-surfaces (#F6F3F2) */
+    --muted: 15 18.18% 95.69%;
+    --muted-foreground: 55.38 9.92% 35.69%;
+    /* Vanilla / Lemon-Lime Accent (#EFF0A3) */
+    --accent: 60.78 71.96% 79.02%;
+    --accent-foreground: 62.35 100% 10%;
+    /* Warm Coral Alert (#BA1A1A / #FFDAD6) */
+    --destructive: 0 75.47% 41.57%;
+    --destructive-foreground: 0 0% 100%;
+    /* Soft subtle border (#EAE7E7 / hairline) */
+    --border: 15 10% 90%;
+    --input: 15 18.18% 95.69%;
+    --ring: 60.78 71.96% 79.02%;
+    --radius: 2rem; /* 32px base card radius */
+    /* Bento palette extensions */
+    --bento-vanilla: 60.78 71.96% 79.02%;
+    --bento-sage: 105 27.03% 85.49%;
+    --bento-alice: 215 45% 93%;
+    --bento-coral: 6 100% 92%;
+  }
+
+  .dark:root {
+    /* Obsidian dark background matching Figma (#121316) */
+    --background: 225 10% 7.84%;
+    --foreground: 210 20% 98.04%;
+    /* Elevated dark card surface (#1A1D23) */
+    --card: 222 15% 12%;
+    --card-foreground: 210 20% 98.04%;
+    --popover: 222 15% 12%;
+    --popover-foreground: 210 20% 98.04%;
+    /* Primary in dark mode: Glowing Vanilla Accent (#EFF0A3) */
+    --primary: 60.78 71.96% 79.02%;
+    --primary-foreground: 62.35 100% 10%;
+    /* Dark Sage Accent (#223325 / #CFDECA) */
+    --secondary: 125 15% 17%;
+    --secondary-foreground: 105 23.26% 83.14%;
+    /* Dark pill fill & muted surfaces (#22262E) */
+    --muted: 220 15% 15.69%;
+    --muted-foreground: 217.89 10.61% 64.9%;
+    /* Glowing Vanilla Accent (#EFF0A3) */
+    --accent: 60.78 71.96% 79.02%;
+    --accent-foreground: 62.35 100% 10%;
+    /* Dark Coral Alert (#4E161C / #FFB4AB) */
+    --destructive: 356 65% 20%;
+    --destructive-foreground: 6.43 100% 83.53%;
+    --border: 0 0% 100% / 0.1;
+    --input: 220 15% 15.69%;
+    --ring: 60.78 71.96% 79.02%;
+    --radius: 2rem; /* 32px base card radius */
+    /* Bento palette extensions */
+    --bento-vanilla: 60.78 71.96% 79.02%;
+    --bento-sage: 125 15% 17%;
+    --bento-alice: 215 35% 16%;
+    --bento-coral: 356 65% 20%;
+  }
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background-color: hsl(var(--background));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
