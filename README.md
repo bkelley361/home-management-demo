@@ -16,8 +16,8 @@ npm run typecheck
 
 # 3. Start the app
 npm run dev
-# or run directly on iOS Simulator:
-npm run ios
+
+hit i for iOS simulator
 ```
 
 - **Pre-populated Demo Data**: Includes a realistic home, categories (HVAC, Kitchen & Laundry, Plumbing, Vehicles), assets (Carrier Heat Pump, Whirlpool Refrigerator, Rheem Water Heater, 2022 Honda CR-V), maintenance reminders, utilities, and expenses.
